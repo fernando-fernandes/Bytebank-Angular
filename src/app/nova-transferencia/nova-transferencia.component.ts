@@ -7,7 +7,7 @@ import {Component, EventEmitter, Output} from '@angular/core'
 
 export class NovaTransferenciaComponent {
 
-  @Output() aoTRansferir = new EventEmitter<any>()
+  @Output() aoTransferir = new EventEmitter<any>()
 
   valor: number
   destino: number
@@ -16,7 +16,7 @@ export class NovaTransferenciaComponent {
     console.log('foi')
 
     const valorEmitir = { valor: this.valor, destino: this.destino}
-    this.aoTRansferir.emit(valorEmitir)
+    this.aoTransferir.emit(valorEmitir)
 
     this.limparCampos()
   }
